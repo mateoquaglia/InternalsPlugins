@@ -1,20 +1,20 @@
-//‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹‹
-//›                                                                         ﬁ
-//› Module: Internals Example Source File                                   ﬁ
-//›                                                                         ﬁ
-//› Description: Declarations for the Internals Example Plugin              ﬁ
-//›                                                                         ﬁ
-//›                                                                         ﬁ
-//› This source code module, and all information, data, and algorithms      ﬁ
-//› associated with it, are part of CUBE technology (tm).                   ﬁ
-//›                 PROPRIETARY AND CONFIDENTIAL                            ﬁ
-//› Copyright (c) 1996-2007 Image Space Incorporated.  All rights reserved. ﬁ
-//›                                                                         ﬁ
-//›                                                                         ﬁ
-//› Change history:                                                         ﬁ
-//›   tag.2005.11.30: created                                               ﬁ
-//›                                                                         ﬁ
-//ﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂﬂ
+//√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú√ú
+//√ù                                                                         √û
+//√ù Module: Internals Example Source File                                   √û
+//√ù                                                                         √û
+//√ù Description: Declarations for the Internals Example Plugin              √û
+//√ù                                                                         √û
+//√ù                                                                         √û
+//√ù This source code module, and all information, data, and algorithms      √û
+//√ù associated with it, are part of CUBE technology (tm).                   √û
+//√ù                 PROPRIETARY AND CONFIDENTIAL                            √û
+//√ù Copyright (c) 1996-2007 Image Space Incorporated.  All rights reserved. √û
+//√ù                                                                         √û
+//√ù                                                                         √û
+//√ù Change history:                                                         √û
+//√ù   tag.2005.11.30: created                                               √û
+//√ù                                                                         √û
+//√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü√ü
 
 #include "Example.hpp"          // corresponding header file
 #include <math.h>               // for atan2, sqrt
@@ -166,12 +166,12 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
   // Use the incoming data, for now I'll just write some of it to a file to a) make sure it
   // is working, and b) explain the coordinate system a little bit (see header for more info)
   
-     // Preparo los datos que quiero enviar a travÈs del puerto serie, aceleracion en este caso
+     // Preparo los datos que quiero enviar a trav√©s del puerto serie, aceleracion en este caso
     char message[1024];
     sprintf(message, "DeltaTime=%.4f, RPM=%.1f, Acceleration=%.2f",
         info.mDeltaTime, info.mEngineRPM, CalculateAcceleration(info.mLocalAccel));
 
-    // EnvÌo el mensaje a travÈs del puerto serie
+    // Env√≠o el mensaje a trav√©s del puerto serie
     port.write(message, strlen(message));
 
     // Imprimo el mensaje en la consola
@@ -251,9 +251,9 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
     fclose( fo );
   }
 }
-
+//debo enviar 2 valores de aceleracion, no la componente en modulo de la aceleracion, CAMBIAR
 float CalculateAcceleration(const TelemVect3& localAccel) {
-    // Calcula la magnitud de la aceleraciÛn a partir de la aceleraciÛn local
+    // Calcula la magnitud de la aceleraci√≥n a partir de la aceleraci√≥n local
     return sqrtf(localAccel.x * localAccel.x + localAccel.y * localAccel.y + localAccel.z * localAccel.z);
 }
 
