@@ -156,7 +156,7 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
         info.mDeltaTime, info.mEngineRPM, CalculateAcceleration(info.mLocalAccel));
 
     // Envío el mensaje a través del puerto serie
-    port.write(message, strlen(message));
+    port.write(message, strlen(message));  //toca cambiarlo 
 
     // Imprimo el mensaje en la consola
     printf("%s\n", message);
