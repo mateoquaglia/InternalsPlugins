@@ -1,20 +1,4 @@
-//ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
-//Ý                                                                         Þ
-//Ý Module: Internals Example Source File                                   Þ
-//Ý                                                                         Þ
-//Ý Description: Declarations for the Internals Example Plugin              Þ
-//Ý                                                                         Þ
-//Ý                                                                         Þ
-//Ý This source code module, and all information, data, and algorithms      Þ
-//Ý associated with it, are part of CUBE technology (tm).                   Þ
-//Ý                 PROPRIETARY AND CONFIDENTIAL                            Þ
-//Ý Copyright (c) 1996-2007 Image Space Incorporated.  All rights reserved. Þ
-//Ý                                                                         Þ
-//Ý                                                                         Þ
-//Ý Change history:                                                         Þ
-//Ý   tag.2005.11.30: created                                               Þ
-//Ý                                                                         Þ
-//ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
 // INTERNAT PLUGIN 
 #include "Example.hpp"          // corresponding header file
 #include <math.h>               // for atan2, sqrt
