@@ -158,7 +158,7 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
     // Envío el mensaje a través del puerto serie
     port.write(message, strlen(message));  //toca cambiarlo 
 
-    // Imprimo el mensaje en la consola no sale
+    // Imprimo el mensaje en la consola 
     printf("%s\n", message);
 
   FILE *fo = fopen( "ExampleInternalsTelemetryOutput.txt", "a" );
