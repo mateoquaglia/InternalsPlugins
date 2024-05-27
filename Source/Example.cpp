@@ -1,5 +1,5 @@
 
-// INTERNAT PLUGIN de La
+// INTERNAT PLUGIN de L
 #include "Example.hpp"          // corresponding header file
 #include <math.h>               // for atan2, sqrt
 #include <stdio.h>            // for sample output
