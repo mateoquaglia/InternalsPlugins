@@ -8,7 +8,7 @@
 
 
 
-
+//
 unsigned g_uPluginID          = 0;
 char     g_szPluginName[]     = "ExampleInternalsPlugin - 2005.11.30";
 unsigned g_uPluginVersion     = 001;
