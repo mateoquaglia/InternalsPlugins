@@ -14,7 +14,7 @@ char     g_szPluginName[]     = "ExampleInternalsPlugin - 2005.11.30";
 unsigned g_uPluginVersion     = 001;
 unsigned g_uPluginObjectCount = 1;
 InternalsPluginInfo g_PluginInfo;
-const SerialPort = require('serialport');  // Importo la biblioteca serialport, despues instalarla
+const SerialPort = require('serialport');  // Importo la biblioteca serialport, despues instalarla en 
 const port = new SerialPort('COM1', { baudRate: 9600 });  // Ajusto el nombre del puerto y la velocidad 
 
 // interface to plugin information
