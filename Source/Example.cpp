@@ -1,7 +1,7 @@
 
 // INTERNAL PLUGIN 
 #include "Example.hpp"          // corresponding header file
-#include <math.h>               // for atan2, sqrt
+#include <math.h>               
 #include <stdio.h>            
 #include <serialport.h>   
 
