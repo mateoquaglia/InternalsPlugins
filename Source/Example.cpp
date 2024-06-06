@@ -1,6 +1,6 @@
 
 // INTERNAL PLUGIN 
-#include "Example.hpp"          // corresponding header file
+#include "Example.hpp"         
 #include <math.h>               
 #include <stdio.h>            
 #include <serialport.h>   
