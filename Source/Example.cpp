@@ -370,7 +370,7 @@ void ExampleInternalsPlugin::UpdateScoring( const ScoringInfoV2 &info )
     // Delimit sections
     fprintf( fo, "\n" );
 
-    // Close file
+
     fclose( fo );
   }
 }
