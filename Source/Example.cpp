@@ -254,7 +254,7 @@ void ExampleInternalsPlugin::UpdateGraphics( const GraphicsInfoV2 &info )
     fprintf( fo, "HWND=%d\n", info.mHWND );
     fprintf( fo, "Ambient Color=(%.1f,%.1f,%.1f)\n\n", info.mAmbientRed, info.mAmbientGreen, info.mAmbientBlue );
 
-    // Close file
+  
     fclose( fo );
   }
 }
