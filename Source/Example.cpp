@@ -303,9 +303,7 @@ bool ExampleInternalsPlugin::ForceFeedback( float &forceValue )
   // CHANGE COMMENTS TO ENABLE FORCE EXAMPLE
   return( false );
 
-  // I think the bounds are -11500 to 11500 ...
-//  forceValue = 11500.0f * sinf( mET );
-//  return( true );
+
 }
 
 
