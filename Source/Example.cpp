@@ -379,7 +379,7 @@ bool ExampleInternalsPlugin::RequestCommentary( CommentaryRequestInfo &info )
   // COMMENT OUT TO ENABLE EXAMPLE
   return( false );
 
-  // only if enabled, of course
+
   if( !mEnabled )
     return( false );
 
