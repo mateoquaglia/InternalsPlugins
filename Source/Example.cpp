@@ -383,7 +383,7 @@ bool ExampleInternalsPlugin::RequestCommentary( CommentaryRequestInfo &info )
   if( !mEnabled )
     return( false );
 
-  // Note: function is called twice per second
+  
 
   // Say green flag event for no particular reason every 20 seconds ...
   const float timeMod20 = fmodf( mET, 20.0f );
