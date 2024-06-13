@@ -1,5 +1,5 @@
 
-// INTERNAL 
+// INTERNA
 #include "Example.hpp"         
 #include <math.h>               
 #include <stdio.h>            
