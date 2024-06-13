@@ -1,5 +1,5 @@
 
-// INTERNAL PLU
+// INTERNAL PL
 #include "Example.hpp"         
 #include <math.h>               
 #include <stdio.h>            
