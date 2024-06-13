@@ -1,5 +1,5 @@
 
-// INTERNAL PLUGIN 
+// INTERNAL PLUGI
 #include "Example.hpp"         
 #include <math.h>               
 #include <stdio.h>            
