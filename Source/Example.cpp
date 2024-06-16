@@ -271,7 +271,7 @@ bool ExampleInternalsPlugin::CheckHWControl( const char * const controlName, flo
   // Sorry, no control allowed over actual vehicle inputs ... would be too easy to cheat!
   // However, you can still look at the values.
 
-  // Note: since the game calls this function every frame for every available control, you might consider
+
   // doing a binary search if you are checking more than 7 or 8 strings, just to keep the speed up.
   if( _stricmp( controlName, "LookLeft" ) == 0 )
   {
