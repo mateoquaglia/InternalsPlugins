@@ -365,7 +365,7 @@ void ExampleInternalsPlugin::UpdateScoring( const ScoringInfoV2 &info )
       fprintf( fo, " LocalRotAccel=(%.2f,%.2f,%.2f)\n", vinfo.mLocalRotAccel.x, vinfo.mLocalRotAccel.y, vinfo.mLocalRotAccel.z );
     }
       
-    // Delimit sections
+    // Delimit section
     fprintf( fo, "\n" );
 
 
