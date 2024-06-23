@@ -1,4 +1,4 @@
-//internal plugin
+//internal plugin m
 
 #include "Example.hpp"         
 #include <math.h>               
