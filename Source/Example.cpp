@@ -5,7 +5,7 @@
 #include <stdio.h>            
 #include <serialport.h>   
 
- 
+  
 
 
 // configuracion del plugin
