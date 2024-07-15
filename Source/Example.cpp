@@ -1,6 +1,6 @@
  //internal plugin
 
-
+ 
 #include "Example.hpp"        
 #include <math.h>               
 #include <stdio.h>             
