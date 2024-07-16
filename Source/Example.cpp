@@ -5,7 +5,7 @@
 #include <math.h>               
 #include <stdio.h>             
 
-       
+        
    
 
 // configuracion del plugin
