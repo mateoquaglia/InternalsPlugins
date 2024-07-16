@@ -6,7 +6,7 @@
 #include <stdio.h>             
 
            
-   
+    
 
 // configuracion del plugin
 unsigned g_uPluginID          = 0;
