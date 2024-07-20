@@ -232,7 +232,7 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
                                       ( info.mLocalVel.z * info.mLocalVel.z ) );
     fprintf( fo, "Speed = %.1f KPH, %.1f MPH\n\n", metersPerSec * 3.6f, metersPerSec * 2.237f );
 
-    // Close file
+    // Close file 
     fclose( fo );
   }
 }
