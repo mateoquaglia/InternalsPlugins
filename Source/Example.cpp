@@ -216,7 +216,7 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
       fprintf( fo, " Flat=%d Detached=%d\n", wheel.mFlat, wheel.mDetached );
     }
 
-    // Compute some auxiliary info based on the above
+    // Compute some auxiliary info based on the above 
     TelemVect3 forwardVector = { -info.mOriX.z, -info.mOriY.z, -info.mOriZ.z };
     TelemVect3    leftVector = {  info.mOriX.x,  info.mOriY.x,  info.mOriZ.x };
 
