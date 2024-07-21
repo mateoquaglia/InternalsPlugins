@@ -7,7 +7,7 @@
 
               
       
- 
+  
 // configuracion del plugin
 unsigned g_uPluginID          = 0;
 char     g_szPluginName[]     = "ExampleInternalsPlugin - 2005.11.30";
