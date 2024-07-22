@@ -283,8 +283,7 @@ bool ExampleInternalsPlugin::CheckHWControl( const char * const controlName, flo
       fRetVal = 0.0f;
     return( true );
   }
-  else if( _stricmp( controlName, "LookRight" ) == 0 )
-  {
+  
     const float headSwitcheroo = fmodf( mET, 2.0f );
     if( ( headSwitcheroo > 1.0f ) && ( headSwitcheroo < 1.5f ) )
       fRetVal = 1.0f;
