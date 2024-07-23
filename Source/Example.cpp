@@ -203,18 +203,7 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
              info.mLastImpactPos.x, info.mLastImpactPos.y, info.mLastImpactPos.z );
 
     // Wheels
-    for( long i = 0; i < 4; ++i )
-    {
-      const TelemWheelV2 &wheel = info.mWheel[i];
-      fprintf( fo, "Wheel=%s\n", (i==0)?"FrontLeft":(i==1)?"FrontRight":(i==2)?"RearLeft":"RearRight" );
-      fprintf( fo, " ForwardRotation=%.1f\n", -wheel.mRotation );
-      fprintf( fo, " SuspensionDeflection=%.3f RideHeight=%.3f\n", wheel.mSuspensionDeflection, wheel.mRideHeight );
-      fprintf( fo, " TireLoad=%.1f LateralForce=%.1f GripFract=%.3f\n", wheel.mTireLoad, wheel.mLateralForce, wheel.mGripFract );
-      fprintf( fo, " BrakeTemp=%.1f TirePressure=%.1f\n", wheel.mBrakeTemp, wheel.mPressure );
-      fprintf( fo, " TireTemp(l/c/r)=%.1f/%.1f/%.1f\n", wheel.mTemperature[0], wheel.mTemperature[1], wheel.mTemperature[2] );
-      fprintf( fo, " Wear=%.3f TerrainName=%s SurfaceType=%d\n", wheel.mWear, wheel.mTerrainName, wheel.mSurfaceType );
-      fprintf( fo, " Flat=%d Detached=%d\n", wheel.mFlat, wheel.mDetached );
-    }
+   
 
     // Compute some auxiliary info based on the above 
     TelemVect3 forwardVector = { -info.mOriX.z, -info.mOriY.z, -info.mOriZ.z };
