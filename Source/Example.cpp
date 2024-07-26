@@ -153,7 +153,7 @@ void ExampleInternalsPlugin::UpdateTelemetry( const TelemInfoV2 &info )
   // is working, and b) explain the coordinate system a little bit (see header for more info)
   
      // Preparo los datos que quiero enviar a través del puerto serie, aceleracion en este caso
-    char message[1024];
+    char message[512];
     sprintf(message, "DeltaTime=%.4f, RPM=%.1f, Acceleration=%.2f",
         info.mDeltaTime, info.mEngineRPM, CalculateAcceleration(info.mLocalAccel));
 
