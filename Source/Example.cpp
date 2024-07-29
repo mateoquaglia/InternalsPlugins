@@ -252,6 +252,7 @@ void ExampleInternalsPlugin::UpdateGraphics( const GraphicsInfoV2 &info )
   {
     // Print stuff
     fprintf( fo, "CamPos=(%.1f,%.1f,%.1f)\n", info.mCamPos.x, info.mCamPos.y, info.mCamPos.z );
+    fprintf( fo, "CamPos=(%.1f,%.1f,%.1f)\n", info.mCamPos.x, info.mCamPos.y, info.mCamPos.z );
     fprintf( fo, "CamOri=(%.1f,%.1f,%.1f)\n", info.mCamOri.x, info.mCamOri.y, info.mCamOri.z );
     fprintf( fo, "HWND=%d\n", info.mHWND );
     fprintf( fo, "Ambient Color=(%.1f,%.1f,%.1f)\n\n", info.mAmbientRed, info.mAmbientGreen, info.mAmbientBlue );
