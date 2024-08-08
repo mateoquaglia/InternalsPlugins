@@ -379,7 +379,7 @@ void ExampleInternalsPlugin::UpdateScoring( const ScoringInfoV2 &info )
 
 bool ExampleInternalsPlugin::RequestCommentary( CommentaryRequestInfo &info )
 {
-  // COMMENT OUT TO ENABLE EXAMPLE
+  // COMMENT OUT TO ENABLE EXAMPLE 
   return( false );
 
 
