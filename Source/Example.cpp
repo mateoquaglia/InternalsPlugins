@@ -29,7 +29,7 @@ unsigned __cdecl GetPluginVersion() { return g_uPluginVersion; }
 extern "C" __declspec(dllexport)
 unsigned __cdecl GetPluginObjectCount() { return g_uPluginObjectCount; }
 
-
+ 
 // get the plugin-info object used to create the plugin.
 extern "C" __declspec(dllexport)
 PluginObjectInfo* __cdecl GetPluginObjectInfo( const unsigned uIndex )
