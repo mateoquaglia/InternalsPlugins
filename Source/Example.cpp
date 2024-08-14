@@ -275,7 +275,7 @@ bool ExampleInternalsPlugin::CheckHWControl( const char * const controlName, flo
   // However, you can still look at the values.
 
 
-  // doing a binary search if you are checking more than 7 or 8 strings, just to keep the speed up.
+  // doing a binary search if you are checking more than 7 or 8 strings, just to keep the speed up
   if( _stricmp( controlName, "LookLeft" ) == 0 )
   {
     const float headSwitcheroo = fmodf( mET, 2.0f );
